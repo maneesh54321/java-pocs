@@ -24,6 +24,6 @@ spring:
 
 file:
   stream:
-    location: /Users/Home/The Witch Part 2 The Other One 2022 (DUAL) 1080p BluRay HEVC x265 5.1 BONE.mkv
+    location: /home/maneesh/vfboxshare/data/The Witch Part 2 The Other One 2022 (DUAL) 1080p BluRay HEVC x265 5.1 BONE.mkv
   json:
-    location: /Users/Home/large-file.json
+    location: /home/maneesh/vfboxshare/data/large-file.json
