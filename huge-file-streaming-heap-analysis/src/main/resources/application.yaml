@@ -1,0 +1,29 @@
+spring:
+  application:
+    name: huge-file-streaming-heap-analysis
+
+---
+# DEV environment
+spring:
+  config:
+    activate:
+      on-profile: dev
+
+file:
+  stream:
+    location: D:/movies/The Witch Part 2 The Other One 2022 (DUAL) 1080p BluRay HEVC x265 5.1 BONE.mkv
+  json:
+    location: C:/Users/manee/work/data/large-file.json
+
+---
+# PROD environment
+spring:
+  config:
+    activate:
+      on-profile: prod
+
+file:
+  stream:
+    location: /Users/Home/The Witch Part 2 The Other One 2022 (DUAL) 1080p BluRay HEVC x265 5.1 BONE.mkv
+  json:
+    location: /Users/Home/large-file.json
