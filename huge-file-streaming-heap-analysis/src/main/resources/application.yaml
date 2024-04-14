@@ -7,13 +7,25 @@ spring:
 spring:
   config:
     activate:
-      on-profile: dev
+      on-profile: windev
 
 file:
   stream:
     location: D:/movies/The Witch Part 2 The Other One 2022 (DUAL) 1080p BluRay HEVC x265 5.1 BONE.mkv
   json:
     location: C:/Users/manee/work/data/large-file.json
+
+---
+spring:
+  config:
+    activate:
+      on-profile: macdev
+
+file:
+  stream:
+    location: /Users/maneesh/Downloads/Teri Baaton Mein Aisa Uljha Jiya (2024) Hindi 720p WEBRip x264 AAC ESub.mkv
+  json:
+    location: /Users/maneesh/Work/data/large-file.json
 
 ---
 # PROD environment
