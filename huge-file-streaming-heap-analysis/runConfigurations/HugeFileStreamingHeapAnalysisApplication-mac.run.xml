@@ -2,7 +2,7 @@
   <configuration default="false" name="HugeFileStreamingHeapAnalysisApplication-mac" type="Application" factoryName="Application">
     <option name="MAIN_CLASS_NAME" value="com.example.hugefilestreamingheapanalysis.HugeFileStreamingHeapAnalysisApplication" />
     <module name="huge-file-streaming-heap-analysis.main" />
-    <option name="VM_PARAMETERS" value="-Dspring.profiles.active=macdev -Xmx2g -Xms512m" />
+    <option name="VM_PARAMETERS" value="-Dspring.profiles.active=macdev -Xmx2g -Xms512m -XX:+ExitOnOutOfMemoryError -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=&quot;/Users/maneesh/work/dumps&quot;" />
     <extension name="coverage">
       <pattern>
         <option name="PATTERN" value="com.example.hugefilestreamingheapanalysis.*" />
