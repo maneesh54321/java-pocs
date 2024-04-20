@@ -1,0 +1,14 @@
+{
+  "name": "John Doe",
+  "age": 30,
+  "city": "New York",
+  "email": "johndoe@example.com",
+  "isStudent": false,
+  "languages": ["English", "Spanish", "French"],
+  "address": {
+    "street": "123 Main St",
+    "city": "New York",
+    "zip": "10001",
+    "country": "USA"
+  }
+}
