@@ -26,7 +26,7 @@ public class JsonReader extends PushbackReader {
 		try {
 			char read = (char) this.read();
 			if(read == '\uFFFF') return null;
-			while (read == Constants.NEW_LINE || read == Constants.WHITESPACE){
+			while (read == Constants.NEW_LINE || read == Constants.WHITESPACE || read == Constants.CARRIAGE_RETURN){
 				read = (char) this.read();
 			}
 			if(read == Constants.OBJ_START) {
@@ -50,19 +50,6 @@ public class JsonReader extends PushbackReader {
 			throw new RuntimeException(e);
 		}
 	}
-
-//	private ValueType determineValueType() throws IOException {
-//		this.mark(1);
-//		char read = (char) this.read();
-//		this.reset();
-//		if(read == Constants.OBJ_START){
-//			return ValueType.OBJECT;
-//		} else if (read == Constants.ARRAY_START) {
-//			return ValueType.ARRAY;
-//		} else {
-//			return ValueType.PRIMITIVE;
-//		}
-//	}
 
 	private String readString() throws IOException {
 		StringBuilder stringBuilder = new StringBuilder();

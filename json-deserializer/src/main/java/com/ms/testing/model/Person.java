@@ -1,5 +1,7 @@
 package com.ms.testing.model;
 
+import java.util.List;
+
 public class Person {
 	private String name;
 	private int age;
@@ -7,6 +9,7 @@ public class Person {
 	private String email;
 	private boolean isStudent;
 	private Address address;
+	private List<String> languages;
 
 	public String getName() {
 		return name;
@@ -32,6 +35,10 @@ public class Person {
 		return address;
 	}
 
+	public List<String> getLanguages() {
+		return languages;
+	}
+
 	@Override
 	public String toString() {
 		return "Person{" +
@@ -41,6 +48,7 @@ public class Person {
 				", email='" + email + '\'' +
 				", isStudent=" + isStudent +
 				", address=" + address +
+				", languages=" + languages +
 				'}';
 	}
 }

@@ -11,7 +11,7 @@ public class JSONDeserializerTesting {
 		JsonParser jsonParser = new JsonParser();
 		Person person = jsonParser.parseJson(
 				new InputStreamReader(Objects.requireNonNull(
-						JSONDeserializerTesting.class.getResourceAsStream("/sample_without_arr.json"))),
+						JSONDeserializerTesting.class.getResourceAsStream("/sample.json"))),
 				Person.class
 		);
 		System.out.println(person);

@@ -10,4 +10,5 @@ public interface Constants {
 	char ARRAY_START='[';
 	char ARRAY_END=']';
 	char WHITESPACE = ' ';
+	char CARRIAGE_RETURN = '\r';
 }
